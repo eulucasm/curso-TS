@@ -15,6 +15,7 @@ vai ligar ou desligar.
 
 Herança -> Visa passar caracteristicas de um objeto para outro.
 
-Polimorfismo ->
+Polimorfismo -> Algo que é polimorfo tem a habilidade de assumir diferentes formas.
+
 
 */
