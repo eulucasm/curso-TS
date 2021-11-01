@@ -11,13 +11,13 @@ type Veiculo = {
 type Car = {
   brand: Veiculo['marca'];
   year: Veiculo['ano'];
-  name: string;
+  names: string;
 };
 
 const carro: Car = {
   brand: 'Ford',
   year: 2020,
-  name: 'Fiesta',
+  names: 'Fiesta',
 };
 
 console.log(carro);
