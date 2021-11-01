@@ -32,6 +32,15 @@ export class Pessoa2 implements TipoPessoa2 {
     return this.nome + ' ' + this.sobrenome;
   }
 }
+const pessoaObj: Pessoa2 = {
+  nome: 'Lucas2',
+  sobrenome: 'Marques2',
+
+  nomeCompleto() {
+    return this.nome + ' ' + this.sobrenome;
+  },
+};
 
 const pessoa = new Pessoa('Lucas', 'Marques');
 console.log(pessoa.nomeCompleto());
+console.log(pessoaObj.nomeCompleto());
