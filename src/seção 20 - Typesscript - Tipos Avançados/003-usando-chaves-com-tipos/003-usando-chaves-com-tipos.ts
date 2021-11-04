@@ -1,6 +1,5 @@
 /*
 Usando Chaves com tipos -> isso vai ajudar a manter o codigo mais limpo e organizado.
-
 */
 
 type Veiculo = {
