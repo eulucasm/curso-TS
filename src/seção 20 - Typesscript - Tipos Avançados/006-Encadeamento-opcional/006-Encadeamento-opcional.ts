@@ -6,7 +6,6 @@ Com ele você evita de fazer um if ternário(varios Ifs)
 obs1: os unicos valores em js que são NãoValores são undefined, null.
 obs2: Operador de coalescência nula verifica se a espressao da esquerda retornal algo,
       caso returne null ou undefined ele retorna o valor da direita
-
 */
 
 type Documento = {
