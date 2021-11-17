@@ -1,5 +1,5 @@
 /*
-Aula sobre Decorator Factories (Fábrica de decoradores
+Aula sobre Decorator Factories (Fábrica de decoradores)
 */
 
 @inverteStrings('valor1', 'valor2')
