@@ -1,17 +1,17 @@
 /*
 aulas sobre Composição de decoradores
 */
-
-@inverteStrings('valor1', 'valor2')
-export class Animal {
-  constructor(public cor: string, public nome: string) {
-    console.log('Aqui é a classe');
-  }
+/*
+pode ser assim também:
+interface Constructor{
+  new (...args: any[]):any
 }
+*/
+type Constructor = new (...args: any[]) => any;
 
 function inverteStrings(param1: string, param2: string) {
   //Clousure
-  return function <T extends new (...args: any[]) => any>(target: T): T {
+  return function (target: Constructor) {
     console.log('aqui é o decorador, e recebi', target);
 
     return class extends target {
@@ -28,6 +28,26 @@ function inverteStrings(param1: string, param2: string) {
       }
     };
   };
+}
+
+function outroDecorador(param1: string) {
+  return function (target: Constructor) {
+    console.log('sou o outro decorador' + param1);
+    return target;
+  };
+}
+/*
+function outroDecorador(target: Constructor) {
+  console.log('sou o outro decorador');
+  return target;
+}
+*/
+@outroDecorador(' parametro do outro decorador') //chamado segundo
+@inverteStrings('valor1', 'valor2') //chamado primeiro
+export class Animal {
+  constructor(public cor: string, public nome: string) {
+    console.log('Aqui é a classe');
+  }
 }
 
 const animal = new Animal('Preto', 'Bidu');
