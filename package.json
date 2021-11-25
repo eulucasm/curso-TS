@@ -33,7 +33,10 @@
     "webpack-cli": "^4.9.1"
   },
   "dependencies": {
+    "@types/lodash": "^4.14.177",
     "@types/node": "^16.11.2",
-    "@types/validator": "^13.6.4"
+    "@types/validator": "^13.7.0",
+    "lodash": "^4.17.21",
+    "validator": "^13.7.0"
   }
 }
