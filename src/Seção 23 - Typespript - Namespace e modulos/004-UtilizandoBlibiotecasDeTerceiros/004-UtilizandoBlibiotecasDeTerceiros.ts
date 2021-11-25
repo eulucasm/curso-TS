@@ -1,3 +1,7 @@
+/*
+Aula sobre Utilização de bibliotecas de terceiros com TypeScript:
+*/
+
 import validator from 'validator';
 import _ from 'lodash';
 
